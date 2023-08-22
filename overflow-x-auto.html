@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>overflow-x :auto</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        background-color: aquamarine;
+      }
+      .container .story_container {
+        width: 80vw;
+        height: 11rem;
+        background-color: black;
+        overflow-x: scroll;
+        display: flex;
+        margin-left: 2rem;
+      }
+      .container .story_container::-webkit-scrollbar {
+        display: none;
+      }
+      .container .story_container .box {
+        min-width: 17rem;
+        height: 10rem;
+        background-color: red;
+        display: block;
+        margin: 0.3rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <section class="story_container">
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+        <div class="box">box</div>
+      </section>
+    </div>
+  </body>
+</html>
